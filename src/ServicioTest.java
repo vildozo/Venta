@@ -11,7 +11,8 @@ public class ServicioTest {
 	@Test
 	public void noHayServicio() {
 		Servicio service = new Servicio();
-		assertEquals(0.0,service.calcularTotalServicio());
+		double res = service.calcularTotalServicio();
+		assertEquals(0.0,res,0.01);
 	}
 
 }
