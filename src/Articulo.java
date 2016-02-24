@@ -1,19 +1,19 @@
 
 public class Articulo {
-	public int cantidad=0;
-	public int precio = 0;
+	public double cantidad=0;
+	public double precio = 0;
 	
 	public Articulo(){
 		this.cantidad=0;
 		this.precio=0;	
 	}
 	
-	public Articulo( int cantidad, int precio){
+	public Articulo( double cantidad, double precio){
 		this.cantidad=cantidad;
 		this.precio=precio;	
 	}
 	
-	public int calcularArticulo() {
+	public double calcularArticulo() {
 		return cantidad*precio;
 	}
 
