@@ -13,7 +13,7 @@ public class Articulo {
 		this.precio=precio;	
 	}
 	
-	public double calcularArticulo() {
+	public double calcularTotalArticulo() {
 		return cantidad*precio;
 	}
 

@@ -14,7 +14,7 @@ public class Canasta {
 		if (totalArticulos!=0)
 		{
 		for (int i=0; i<totalArticulos; i++) {
-		      totalCanasta+=listaArticulo[i].calcularArticulo();
+		      totalCanasta+=listaArticulo[i].calcularTotalArticulo();
 		    }
 		}
 		if (totalServicios!=0)
@@ -38,10 +38,10 @@ public class Canasta {
 		totalServicios+=1;
 	}
 	
-	public int cuantosArticulos(){
+	public int cuantosArticulosEnLista(){
 		return totalArticulos;
 	}
-	public int cuantosServicios(){
+	public int cuantosServiciosEnLista(){
 		return totalServicios;
 	}
 	

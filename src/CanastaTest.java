@@ -14,13 +14,13 @@ public class CanastaTest {
 	@Test
 	public void CeroArticulo() {
 		Canasta basquet = new Canasta();
-		assertEquals(0,basquet.cuantosArticulos());	
+		assertEquals(0,basquet.cuantosArticulosEnLista());	
 	}
 	
 	@Test
 	public void CeroServicio() {
 		Canasta basquet = new Canasta();
-		assertEquals(0,basquet.cuantosServicios());	
+		assertEquals(0,basquet.cuantosServiciosEnLista());	
 	}
 	
 	@Test
@@ -28,7 +28,7 @@ public class CanastaTest {
 		Canasta basquet = new Canasta();
 		Articulo a = new Articulo(4,3);
 		basquet.agregarArticuloALista(a);
-		assertEquals(1,basquet.cuantosArticulos());	
+		assertEquals(1,basquet.cuantosArticulosEnLista());	
 	}
 	
 	@Test
@@ -36,7 +36,7 @@ public class CanastaTest {
 		Canasta basquet = new Canasta();
 		Servicio service = new Servicio(4,3);
 		basquet.agregarServicioALista(service);
-		assertEquals(1,basquet.cuantosServicios());	
+		assertEquals(1,basquet.cuantosServiciosEnLista());	
 	}
 	
 	@Test
