@@ -14,13 +14,13 @@ public class Canasta {
 		if (totalArticulos!=0)
 		{
 		for (int i=0; i<totalArticulos; i++) {
-		      totalCanasta=listaArticulo[i].calcularArticulo();
+		      totalCanasta+=listaArticulo[i].calcularArticulo();
 		    }
 		}
 		if (totalServicios!=0)
 		{
 		for (int j=0; j<totalServicios; j++) {
-		      totalCanasta=listaServicios[j].calcularTotalServicio();
+		      totalCanasta+=listaServicios[j].calcularTotalServicio();
 		    } 		
 		}
 		return totalCanasta;	

@@ -65,6 +65,41 @@ public class CanastaTest {
 		assertEquals(14.4,basquet.calcularTotal(),0.01);	
 	}
 	
+	@Test
+	public void CalcularTotalde2Servicio() {
+		Canasta basquet = new Canasta();
+		Servicio service1 = new Servicio(4,3);
+		Servicio service2 = new Servicio(4,3);
+		basquet.agregarServicioALista(service1);
+		basquet.agregarServicioALista(service2);
+		assertEquals(4.8,basquet.calcularTotal(),0.01);	
+	}
+	
+	@Test
+	public void CalcularTotalde2Articulo() {
+		Canasta basquet = new Canasta();
+		Articulo articulo1 = new Articulo(4,3);
+		Articulo articulo2 = new Articulo(4,3);
+		basquet.agregarArticuloALista(articulo1);
+		basquet.agregarArticuloALista(articulo2);
+		assertEquals(24.00,basquet.calcularTotal(),0.01);	
+	}
+	
+	@Test
+	public void CalcularTotalde2Servicio2Articulo() {
+		Canasta basquet = new Canasta();
+		Servicio service1 = new Servicio(4,3);
+		Servicio service2 = new Servicio(4,3);
+		Articulo articulo1 = new Articulo(4,3);
+		Articulo articulo2 = new Articulo(4,3);
+		basquet.agregarArticuloALista(articulo1);
+		basquet.agregarArticuloALista(articulo2);
+		basquet.agregarServicioALista(service1);
+		basquet.agregarServicioALista(service2);
+		
+		assertEquals(28.8,basquet.calcularTotal(),0.01);	
+	}
+	
 	
 
 }
